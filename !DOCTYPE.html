@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            background: linear-gradient(to bottom, #ffffff, #e6e6e6);
+        }
+
+        header {
+            background-color: #2d89ef;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            flex-wrap: wrap;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header img {
+            border-radius: 75%;
+            height: 120px;
+            width: 120px;
+            border: 3px solid white;
+            transition: transform 0.3s;
+        }
+
+        header img:hover {
+            transform: scale(1.1);
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #1e5cb3;
+            transform: scale(1.1);
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        section:nth-child(odd) {
+            background: linear-gradient(to right, #f9f9f9, #ffffff);
+        }
+
+        section:nth-child(even) {
+            background: linear-gradient(to right, #e7e7e7, #f2f2f2);
+        }
+
+        section h2 {
+            border-bottom: 3px solid #2d89ef;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            color: #2d89ef;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        section ul li {
+            margin-bottom: 10px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        a.button {
+            background-color: #2d89ef;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        a.button:hover {
+            background-color: #1e5cb3;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: sticky;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer a {
+            padding: 8px 12px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        footer a:nth-child(1) { background-color: #0077b5; color: white; }
+        footer a:nth-child(2) { background-color: #d93025; color: white; }
+        footer a:nth-child(3) { background-color: #4267B2; color: white; }
+        footer a:nth-child(4) { background-color: #34a853; color: white; }
+
+        footer a:hover {
+            opacity: 0.8;
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            header img {
+                height: 100px;
+                width: 100px;
+            }
+
+            nav {
+                justify-content: center;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+
+            footer {
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Syed Shehroz Ali Naqvi</h1>
+        <img src="pic1.jpg" alt="Your Photo">
+        <nav>
+            <a href="#downloads">Downloads</a>
+            <a href="#education">Education</a>
+            <a href="#work-history">Work History</a>
+            <a href="#skills">Skills</a>
+            <a href="#future-goals">Future Goals</a>
+            <a href="#family-background">Family Background</a>
+            <a href="#recent-activities">Recent Activities</a>
+            <a href="#fun-stats">Fun Stats</a>
+        </nav>
+    </header>
+
+    <section class="section" id="downloads">
+        <h2>Downloads</h2>
+        <div class="button-group">
+            <a class="button" href="SHEHROZ.pdf" download>Resume</a>
+            <a class="button" href="degree.pdf" download>Degree</a>
+            <a class="button" href="Awards.pdf" download>Awards</a>
+        </div>
+        
+    </section>
+
+    <section class="section" id="education">
+        <h2>Education</h2>
+        <ul>
+            <li>Bachelor of Computer Systems Engineering, NED University (2020-2024)</li>
+            <li>A-Levels, Cedar College (2018-2020)</li>
+            <li>O-Levels, Foundation Public School (2007-2018)</li>
+            <li>Pre Schooling, Head Start Schooling System (2004-2007)</li>
+        </ul>
+    </section>
+
+    <section class="section" id="work-history">
+        <h2>Work History</h2>
+        <p>SQA Engineer at AngleBrackets.io (Sep 2024 - Present)</p>
+        <p>Revenue Cycle Management at Sarina Health Services (Sep 2021 - Mar 2022)</p>
+    </section>
+
+    <section class="section" id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Software Testing</li>
+            <li>Python Programming</li>
+            <li>Artificial Intelligence</li>
+            <li>Database Development</li>
+            <li>Computer Networking</li>
+        </ul>
+    </section>
+
+    <section class="section" id="future-goals">
+        <h2>Future Goals</h2>
+        <p>My future goals are focused on both academic and personal growth, as well as contributing to the field of technology:</p>
+        <p>I aspire to study abroad and pursue a master’s degree specializing in Artificial Intelligence (AI) and Machine Learning. This will enable me to deepen my knowledge and expertise in these advanced technologies.</p>
+        <p>Within the next five years, I aim to establish my own company dedicated to providing innovative AI-based solutions. My goal is to create impactful and efficient systems that solve real-world problems and contribute to the advancement of technology.</p>
+        <p>On a personal front, I have a strong desire to perform Umrah and Hajj with my family, fulfilling an important spiritual milestone and strengthening my bond with my faith.</p>
+    </section>
+
+    <section class="section" id="family-background">
+        <h2>Family Background</h2>
+        <p>We are a family of four: my father, my mother, my elder brother, and me.</p>
+        <p>My father is a retired Pakistan Air Force officer. He served in the Pakistan Air Force for 10 years, after which he retired and joined PIA as a General Manager in Flight Duty Free. He worked there for 11 years before retiring.</p>
+        <p>My mother is a homemaker. She holds a master’s degree in Chemistry from Karachi University and worked as a chemical scientist with Dr. Atta-ur-Rahman for 8 months.</p>
+        <p>My elder brother is a recent BBA graduate from Wollongong University in Dubai. He is currently in Canada pursuing his master’s degree.</p>
+    </section>
+
+    <section class="section" id="recent-activities">
+        <h2>Recent Activities</h2>
+        <p>Completed Manual Testing Course</p>
+        <p>Completed API Testing Course</p>
+        <p>Started learning Selenieum</p>
+        <p>Started learning loadRunner and Jmeter Tools</p>
+        <P>Donated blood at the Fatimid Foundation</P>
+    </section>
+
+    <section class="section" id="fun-stats">
+        <h2>Fun Stats</h2>
+        <ul>
+            <li>Coffees Consumed: 1,724</li>
+            <li>Movies Watched: 153</li>
+            <li>Books Read: 15</li>
+            <li>Cricket Matches played: 164</li>
+            <li>Games Played: 17</li>
+        </ul>
+    </section>
+    
+    <footer>
+        <a href="https://linkedin.com/in/syed-shehroz-ali-naqvi-b728bb1ba" target="_blank">LinkedIn</a>
+        <a href="mailto:naqvishehroze@gmail.com">Email</a>
+        <a href="https://www.facebook.com/shehroz.naqvi.10" target="_blank">Facebook</a>
+        <a href="tel:+923353471723">Call</a>
+        
+        <style>
+            footer {
+                background-color: #1a1a1a;
+                color: white;
+                text-align: center;
+                padding: 15px 0;
+                position: sticky;
+                bottom: 0;
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                gap: 20px;
+                box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+            }
+        
+            footer a {
+                padding: 8px 12px;
+                text-decoration: none;
+                border-radius: 15px;
+                transition: background-color 0.3s, transform 0.3s;
+                flex: 1; /* Equal size for all buttons */
+                text-align: center;
+                max-width: 150px; /* Optional: limits button size */
+            }
+        
+            footer a:nth-child(1) {
+                background-color: #0077b5;
+                color: white;
+            }
+        
+            footer a:nth-child(2) {
+                background-color: #d93025;
+                color: white;
+            }
+        
+            footer a:nth-child(3) {
+                background-color: #4267B2;
+                color: white;
+            }
+        
+            footer a:nth-child(4) {
+                background-color: #34a853;
+                color: white;
+            }
+        
+            footer a:hover {
+                opacity: 0.8;
+                transform: scale(1.05);
+            }
+    
+        @media (max-width: 600px) {
+            footer {
+                flex-direction: row;
+                flex-wrap: wrap
+                position ;
+            }
+    
+            footer a {
+                flex: 1 1 35%; /* Ensures two buttons per row */
+                max-width: 35%;
+                text-align: center;
+            }
+        }
+    </style>
+    
